@@ -357,7 +357,7 @@ alt="Tropical destination"
         </div>
         <div class="col-md-3 fade-in">
           <div class="gallery-card">
-            <img src="https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?auto=format&fit=crop&w=1200&q=80" alt="Awarding night">
+            <img src="awarding night.jpeg" alt="Awarding night">
             <div class="gallery-caption">
               <h5>Awarding Night</h5>
               <p>Recognition & appreciation</p>
@@ -385,6 +385,11 @@ alt="Tropical destination"
         <div class="col-lg-3 col-6 fade-in">
           <div class="mini-gallery">
             <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?auto=format&fit=crop&w=1200&q=80" alt="Dinner event" />
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 fade-in">
+          <div class="mini-gallery">
+            <img src="outbond.jpeg" alt="outbond" />
           </div>
         </div>
       </div>
@@ -584,18 +589,6 @@ alt="Tropical destination"
 
 </form>
 
-              <div class="col-12 d-grid d-md-flex justify-content-md-end mt-2">
-                <button type="submit" class="btn btn-warning btn-lg px-5 fw-semibold">
-                  Submit Request
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- CONTACT -->
   <section id="contact" class="section-padding section-soft">
     <div class="container">
@@ -683,10 +676,10 @@ alt="Tropical destination"
         <div class="modal-body pt-0">
           <p class="text-white-75" id="modalDesc"></p>
           <div class="d-flex flex-wrap gap-2">
-            <span class="activity-chip">Professional event handling</span>
-            <span class="activity-chip">Hotel partner</span>
-            <span class="activity-chip">Documentation</span>
-            <span class="activity-chip">Custom itinerary</span>
+            <span class="activity-chip text-white">Professional event handling</span>
+            <span class="activity-chip text-white">Hotel partner</span>
+            <span class="activity-chip text-white">Documentation</span>
+            <span class="activity-chip text-white">Custom itinerary</span>
           </div>
         </div>
         <div class="modal-footer border-0">
@@ -744,13 +737,13 @@ document
       }
     ]);
 
-  if (error) {
-    console.error(error);
-    alert("Gagal mengirim data");
-  } else {
-    alert("Permintaan berhasil dikirim!");
-    document.getElementById("bookingForm").reset();
-  }
+ if (error) {
+  console.error(error);
+  alert(error.message);
+} else {
+  alert("Permintaan berhasil dikirim!");
+  document.getElementById("bookingForm").reset();
+}
 
 });
 
