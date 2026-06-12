@@ -33,9 +33,9 @@
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-glass fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#home">
-        <span class="brand-badge">SJ</span>
-        <span>Sejuta Jalan Indonesia</span>
+      <a class="navbar-brand text-dark fw-bold d-flex  align-items-center gap-2" href="#home">
+        <img src="logo.png" alt="Sejuta Jalan Indonesia" class="navbar-logo">
+         <span>Sejuta Jalan Indonesia</span>
       </a>
       <button
         class="navbar-toggler"
@@ -116,12 +116,11 @@
 
         <div class="col-lg-5 mt-5 mt-lg-0 fade-in">
           <div class="glass-card p-3 p-md-4 hero-card">
-            <img
-            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
-            class="img-fluid rounded-4 hero-card-img"
-            alt="Tropical destination"
+           <img
+src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
+class="img-fluid rounded-4 hero-card-img"
+alt="Tropical destination"
 />
-            />
             <div class="mt-3">
               <h5 class="fw-bold text-white mb-2">Your Journey to Paradise Begin Here!</h5>
               <p class="text-white-75 mb-0">
@@ -150,7 +149,7 @@
         <div class="col-lg-6 fade-in">
           <div class="glass-card dark-card p-4 h-100">
             <h4 class="fw-bold mb-3">Why Incentive Travel?</h4>
-            <p class="text-white-75">
+            <p class="fw-bold">
               Incentive travel membantu perusahaan memberikan penghargaan berbasis pengalaman yang berkesan,
               sekaligus mendukung motivasi dan performa tim.
             </p>
@@ -216,7 +215,7 @@
           <div class="destination-card">
             <div class="destination-img-wrap">
               <img
-                src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80"
+                src="https://images.unsplash.com/photo-1604999333679-b86d54738315"
                 alt="Bali"
                 class="destination-img"
               />
@@ -268,10 +267,7 @@
           <div class="destination-card">
             <div class="destination-img-wrap">
               <img
-                src="https://images.unsplash.com/photo-1604999333679-b86d54738315" class="card-img-top">
-                alt="Lombok"
-                class="destination-img"
-              />
+                src="pink beachhhh.jpeg" class="card-img-top">
               <div class="destination-overlay"></div>
               <div class="destination-label">LOMBOK</div>
             </div>
@@ -451,7 +447,7 @@
             </div>
 
             <img
-              src="https://images.unsplash.com/photo-1519821172141-b5d8e2f2f6b3?auto=format&fit=crop&w=1200&q=80"
+              src="pullman lombok.jpeg"
               class="img-fluid rounded-4 mt-4"
               alt="Hotel Lombok"
             />
@@ -536,52 +532,57 @@
         </p>
       </div>
 
-      <div class="row justify-content-center">
-        <div class="col-lg-10 fade-in">
-          <div class="glass-card p-4 p-md-5">
-            <form id="bookingForm" class="row g-3">
-              <div class="col-md-6">
-                <label class="form-label text-white">Nama Perusahaan</label>
-                <input type="text" class="form-control form-control-lg form-input" required>
-              </div>
+     <form id="bookingForm" class="row g-3">
 
-              <div class="col-md-6">
-                <label class="form-label text-white">PIC</label>
-                <input type="text" class="form-control form-control-lg form-input" required>
-              </div>
+  <div class="col-md-6">
+    <label class="form-label text-white">Nama Perusahaan</label>
+    <input type="text" id="perusahaan" class="form-control form-control-lg form-input" required>
+  </div>
 
-              <div class="col-md-6">
-                <label class="form-label text-white">Jumlah Peserta</label>
-                <input type="number" class="form-control form-control-lg form-input" required>
-              </div>
+  <div class="col-md-6">
+    <label class="form-label text-white">PIC</label>
+    <input type="text" id="pic" class="form-control form-control-lg form-input" required>
+  </div>
 
-              <div class="col-md-6">
-                <label class="form-label text-white">Pilihan Destinasi</label>
-                <select class="form-select form-select-lg form-input" required>
-                  <option value="">Pilih destinasi</option>
-                  <option>Bali</option>
-                  <option>Lombok</option>
-                </select>
-              </div>
+  <div class="col-md-6">
+    <label class="form-label text-white">Jumlah Peserta</label>
+    <input type="number" id="jumlah_peserta" class="form-control form-control-lg form-input" required>
+  </div>
 
-              <div class="col-md-6">
-                <label class="form-label text-white">Tanggal Rencana</label>
-                <input type="date" class="form-control form-control-lg form-input" required>
-              </div>
+  <div class="col-md-6">
+    <label class="form-label text-white">Pilihan Destinasi</label>
+    <select id="destinasi" class="form-select form-select-lg form-input" required>
+      <option value="">Pilih destinasi</option>
+      <option>Bali</option>
+      <option>Lombok</option>
+    </select>
+  </div>
 
-              <div class="col-md-6">
-                <label class="form-label text-white">Budget Range</label>
-                <input type="text" class="form-control form-control-lg form-input" placeholder="Contoh: 500 juta - 1 M">
-              </div>
+  <div class="col-md-6">
+    <label class="form-label text-white">Tanggal Rencana</label>
+    <input type="date" id="tanggal_rencana" class="form-control form-control-lg form-input" required>
+  </div>
 
-              <div class="col-12">
-                <label class="form-label text-white">Kebutuhan Khusus</label>
-                <textarea
-                  class="form-control form-control-lg form-input"
-                  rows="4"
-                  placeholder="Contoh: gala dinner, team building, branding company, dll."
-                ></textarea>
-              </div>
+  <div class="col-md-6">
+    <label class="form-label text-white">Budget Range</label>
+    <input type="text" id="budget" class="form-control form-control-lg form-input">
+  </div>
+
+  <div class="col-12">
+    <label class="form-label text-white">Kebutuhan Khusus</label>
+    <textarea
+      id="kebutuhan"
+      class="form-control form-control-lg form-input"
+      rows="4"></textarea>
+  </div>
+
+  <div class="col-12 text-center">
+    <button type="submit" class="btn btn-primary btn-lg">
+      Kirim Permintaan
+    </button>
+  </div>
+
+</form>
 
               <div class="col-12 d-grid d-md-flex justify-content-md-end mt-2">
                 <button type="submit" class="btn btn-warning btn-lg px-5 fw-semibold">
@@ -659,9 +660,14 @@
   </section>
 
   <!-- FOOTER -->
+  
+</footer>
   <footer class="footer-section">
     <div class="container text-center">
       <h4 class="fw-bold text-white mb-2">Your Journey to Paradise Begin Here!</h4>
+      <p class="text-white">
+        Corporate Incentive Travel & MICE Organizer
+  </p>
       <p class="text-white-75 mb-0">PT Sejuta Jalan Indonesia • www.sejalani.com</p>
     </div>
   </footer>
@@ -708,5 +714,46 @@
 
   <!-- Custom JS -->
   <script src="script.js"></script>
+  <!-- supabase-->
+ <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+ <script>
+
+const supabase = window.supabase.createClient(
+  "https://txvwqrtozzjxoccgufgf.supabase.co",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR4dndxcnRvenpqeG9jY2d1ZmdmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA5MTgyNTUsImV4cCI6MjA5NjQ5NDI1NX0.oATmvUxSptiFOYWabfU8fAGuWcHI0uZu1MC0nLPdq1E"
+);
+
+document
+.getElementById("bookingForm")
+.addEventListener("submit", async (e) => {
+
+  e.preventDefault();
+
+  const { error } = await supabase
+    .from("sejuta jalan")
+    .insert([
+      {
+        perusahaan: document.getElementById("perusahaan").value,
+        pic: document.getElementById("pic").value,
+        jumlah_peserta: document.getElementById("jumlah_peserta").value,
+        destinasi: document.getElementById("destinasi").value,
+        tanggal_rencana: document.getElementById("tanggal_rencana").value,
+        budget: document.getElementById("budget").value,
+        kebutuhan: document.getElementById("kebutuhan").value
+      }
+    ]);
+
+  if (error) {
+    console.error(error);
+    alert("Gagal mengirim data");
+  } else {
+    alert("Permintaan berhasil dikirim!");
+    document.getElementById("bookingForm").reset();
+  }
+
+});
+
+</script>
 </body>
 </html>

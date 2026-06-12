@@ -12,7 +12,20 @@
   --card: rgba(255,255,255,.10);
   --card-border: rgba(255,255,255,.16);
 }
+ .navbar-logo{
+  width: 90px;
+  height: 45px;
+  object-fit: contain;
+  
+}
+.navbar-brand{
+  font-size:1.1rem;
+  font-weight:700;
+}
 
+.navbar{
+  padding:14px 0;
+}
 *{
   box-sizing: border-box;
 }
